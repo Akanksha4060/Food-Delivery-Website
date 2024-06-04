@@ -1,0 +1,91 @@
+/* Nunito for fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --pink:#f79391;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow: scroll;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior:smooth;
+    
+}
+
+h1{
+    color: var(--pink);
+    font-size: 5rem;
+    text-align: center;
+    padding: 5rem;
+    gap: 2rem
+}
+
+h3{
+    color: var(--black);
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem;
+    gap: 2rem;
+    text-transform: capitalize;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor:pointer;
+    padding: .8rem 3rem;
+
+}
+.btn:hover{
+    color: #fff;
+    background:var(--pink);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}

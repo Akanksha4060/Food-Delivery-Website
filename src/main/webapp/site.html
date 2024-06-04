@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Food_App</title>
+
+	<!-- swiper -->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+	<!-- font awsome cnd -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- custom css file -->
+	<link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+	<!--header section  -->
+	<header>
+		<a href="#" class="logo"><i class="fas fa-utensils"></i>foodie.</a>
+
+		<!-- navigation bar -->
+		<nav class="navbar">
+			<a class="active" href="#home">home</a>
+			<a href="#dishes">dishes</a>
+			<a href="#about">about</a>
+			<a href="#menu">menu</a>
+			<a href="#review">review</a>
+			<a href="orderNow.jsp">order</a>
+		</nav>
+
+		<!-- icons -->
+		<div class="icons">
+			<i class="fas fa-bars" id="menu-bars"></i>
+			<a href="#"  class="fas fa-search" id="search-icon"></a>
+			<a href="#" class="fas fa-heart"></a>
+			<span>0</span>
+			<!-- <a href="addToCart.jsp" class="fas fa-shopping-cart"></a> -->
+		</div>
+		
+		<!--Logout -->
+		<div class="logout">
+			<a href="logout.jsp" id="logout">Logout</a>
+		</div>
+
+	</header>
+
+	<!-- header section ends -->
+
+	<!-- search form -->
+
+	<form action="" id="search-form">
+		<input type="search" placeholder="search here...." name="" id="search-box">
+		<label for="search-box" class="fas fa-search"></label>
+		<i class="fas fa-times" id="close"></i>
+	</form>
+
+	<!-- search form end -->
+
+	<!-- home section starts -->
+
+	<section class="home" id="home">
+
+		<div class="swiper-container home-slider">
+
+			<div class="swiper-wrapper wrapper">
+
+				<div class="swiper-slide slide">
+					<div class="content">
+						<span>Our Special Dish</span>
+						<h3>spicy noodles</h3>
+						<p>Spicy noodles are a tantalizing dish featuring chewy noodles bathed in a fiery sauce, delivering a harmonious blend of heat and flavor. With ingredients like chili peppers, garlic, and soy sauce, they offer a satisfyingly bold culinary experience enjoyed in various forms across cultures</p>
+						<span>Rs.159  </span>
+						<a href="orderNow.jsp" class="btn1" target="_self">order now</a>
+					</div>
+					<div class="image">
+						<img src="images/nodles.webp" alt="">
+					</div>
+				</div>
+
+
+				<div class="swiper-slide slide">
+					<div class="content">
+						<span>Our Special Dish</span>
+						<h3>tandoori chicken</h3>
+						<p>Tandoori chicken is a flavorful dish originating from the Indian subcontinent, characterized by marinated chicken cooked in a tandoor, a clay oven. The marinade typically includes yogurt, lemon juice, and a blend of spices like cumin, coriander, and garam masala, resulting in tender, succulent chicken with a vibrant red hue and smoky flavor. It's a beloved dish known for its aromatic spices and juicy, charred exterior.</p>
+						<span>Rs.179  </span>
+						<a href="orderNow.jsp" class="btn1" target="_self">order now</a>
+					</div>
+					<div class="image">
+						<img src="images/chicken1.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="swiper-slide slide">
+					<div class="content">
+						<span>Our Special Dish</span>
+						<h3>hot pizza</h3>
+						<p>Hot pizza is a beloved Italian-American classic featuring a crispy crust topped with tangy tomato sauce, gooey cheese, and a variety of savory toppings like pepperoni, mushrooms, and bell peppers. It's a comfort food favorite known for its irresistible combination of flavors and satisfyingly gooey texture.</p>
+						<span>Rs.159  </span>
+						<a href="orderNow.jsp" class="btn1" target="_self">order
+							now</a>
+					</div>
+					<div class="image">
+						<img src="images/pizza1.jpg" alt="">
+					</div>
+				</div>
+
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</section>
+	<!-- home section ends -->
+
+
+	<!-- dishes section stasts -->
+
+	<section class="dishes" id="dishes">
+		<h3 class="sub-heading">our dishes</h3>
+		<h1 class="heading">popular dishes</h1>
+
+		<div class="box-container">
+
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/burger.jpg" alt="">
+				<h3>Burger</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</div>
+				<span>Rs.169</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/roll.jpg" alt="">
+				<h3>spring roll</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.119</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/brownie.jpg" alt="">
+				<h3>brownie</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.110</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/pizza.jpg" alt="">
+				<h3>pizza</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.189</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/momos.jpg" alt="">
+				<h3>momos</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.120</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/pasta1.jpg" alt="">
+				<h3>pasta</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.129</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/fries.jpg" alt="">
+				<h3>fries</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.109</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/paneer.jpg" alt="">
+				<h3>paneer chilli</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.139</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+
+
+
+		</div>
+	</section>
+
+	<!-- dishes section ends -->
+
+	<!-- about section starts -->
+
+	<section class="about" id="about">
+
+		<h3 class="sub-heading">about us</h3>
+		<h1 class="heading">why choose us?</h1>
+
+		<div class="row">
+
+			<div class="image">
+				<img src="images/dymplings.png" alt="">
+			</div>
+			<div class="content">
+
+				<h3>best food in country</h3>
+				<p>At Foodie, we believe that every meal should be a delightful experience—a moment to savor, share, and remember. Our restaurant is more than just a place to eat; it's a culinary journey where passion for food meets exceptional service in a warm and inviting atmosphere.</p>
+				<p> From the moment you step through our doors, expect to be treated with warmth and hospitality. Our attentive staff is dedicated to ensuring that every aspect of your dining experience exceeds your expectations, from the moment you place your order to the final bite.</p>
+
+
+				<div class="icons-container">
+
+					<div class="icons">
+						<i class="fas fa-shipping-fast"></i>
+						<span>free delivery</span>
+					</div>
+
+					<div class="icons">
+						<i class="fas fa-dollar-sign"></i>
+						<span>easy payment</span>
+					</div>
+
+					<div class="icons">
+						<i class="fas fa-headset"></i>
+						<span>24/7 service</span>
+					</div>
+
+				</div>
+
+				<a href="#" class="btn">learn more...</a>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!-- about section end -->
+
+	<!-- menu section start -->
+
+	<section class="menu" id="menu">
+		<h3 class="sub-heading">Menu</h3>
+		<h1 class="heading">Today's Special</h1>
+
+		<div class="box-container">
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/pastaa.jpg" alt="">
+				<h3>Creamy Pasta</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</div>
+				<span>Rs.199</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/biryani.jpg" alt="">
+				<h3>Chiken Biryani</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.209</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/pizza_special.jpg" alt="">
+				<h3>Pizaa</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.149</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+			<div class="box">
+				<a href="#" class="fas fa-heart"></a>
+				<a href="#" class="fas fa-eye"></a>
+				<img src="images/shake.jpg" alt="">
+				<h3>Chocolate Shake</h3>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+
+				</div>
+				<span>Rs.129</span>
+				<a href="orderNow.jsp" class="btn1" target="_self">Order Now</a>
+			</div>
+
+
+
+		</div>
+	</section>
+
+	<!-- menu section ends -->
+
+	<!-- review section starts -->
+
+	<section class="review" id="review">
+
+		<h3 class="sub-heading">customer's review</h3>
+		<h1 class="heading">what they say </h1>
+
+		<div class="swiper-container review-slider">
+
+			<div class="swiper-wrapper wrapper">
+
+				<div class="swiper-slide slide">
+					<i class="fas fa-quote-right"></i>
+					<div class="user">
+						<!-- <img src="" alt=""> -->
+						<div class="user-info">
+							<h3>Riyaa</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+					</div>
+					<p>I've ordered from Foodie multiple times through their online platform, and it's always been a seamless experience. The website is user-friendly, and the food arrives promptly and is always fresh and delicious.It's always a nice experice to have foodie's food.
+
+</p>
+				</div>
+
+
+				<div class="swiper-slide slide">
+					<i class="fas fa-quote-right"></i>
+					<div class="user">
+						<!-- <img src="" alt=""> -->
+						<div class="user-info">
+							<h3>Harry</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+					</div>
+					<p>When I'm craving something delicious but don't feel like cooking, Fooodie is my go-to for takeout. Their online ordering system is quick and efficient, and the food never disappoints.I appreciate the convenience and quality that Foodie consistently delivers.
+
+</p>
+				</div>
+
+				<div class="swiper-slide slide">
+					<i class="fas fa-quote-right"></i>
+					<div class="user">
+						<!-- <img src="" alt=""> -->
+						<div class="user-info">
+							<h3>Shiv</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+					</div>
+					<p>As a busy professional, I don't always have time to cook dinner after a long day at work. That's why I love ordering from Foodie's online menu. The food is always packed with flavor and made with care. Thanks to Foodie, I can enjoy a delicious meal without any hassle.</p>
+				</div>
+
+
+				<div class="swiper-slide slide">
+					<i class="fas fa-quote-right"></i>
+					<div class="user">
+						<!-- <img src="" alt=""> -->
+						<div class="user-info">
+							<h3>Ritika</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+					</div>
+					<p>My partner and I had the most wonderful date night at Foodie. The ambiance was nice, and the food was phenomenal. We ordered the creamy pasta and brownie and it was love at first bite! We left feeling completely satisfied and already planning our next visit.
+
+</p>
+				</div>
+
+				<div class="swiper-slide slide">
+					<i class="fas fa-quote-right"></i>
+					<div class="user">
+						<!-- <img src="" alt=""> -->
+						<div class="user-info">
+							<h3>Rahul</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+					</div>
+					<p>I recently dined at foodie with my family, and I have to say, it was an absolutely fantastic experience from start to finish.The food was simply outstanding.I highly recommend foodie to anyone looking for an unforgettable dining experience.
+
+</p>
+				</div>
+
+
+				<div class="swiper-slide slide">
+					<i class="fas fa-quote-right"></i>
+					<div class="user">
+						<!-- <img src="" alt=""> -->
+						<div class="user-info">
+							<h3>Shree</h3>
+							<div class="stars">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+						</div>
+					</div>
+					<p>I recently placed an online order with foodie, and the ordering process was straightforward, and the staff were incredibly helpful in accommodating our requests. The food arrived right on time. I appreciate foodie's attention to detail and commitment to customer satisfaction.
+
+</p>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<!-- review section ends -->
+
+
+
+
+	<!-- order section starts 
+
+	<section class="order" id="order">
+
+		<h3 class="sub-heading">order now</h3>
+		<h1 class="heading">free and fast</h1>
+
+		<form action="">
+			<div class="inputBox">
+				<div class="input">
+					<span>your name</span>
+					<input type="text" placeholder="enter your name">
+				</div>
+				<div class="input">
+					<span>your number</span>
+					<input type="number" placeholder="enter your number">
+				</div>
+			</div>
+
+			<div class="inputBox">
+				<div class="input">
+					<span>your order</span>
+					<input type="text" placeholder="enter food name">
+				</div>
+				<div class="input">
+					<span>additional food</span>
+					<input type="number" placeholder="extra with food">
+				</div>
+			</div>
+
+			<div class="inputBox">
+				<div class="input">
+					<span>how much</span>
+					<input type="number" placeholder="how many order">
+				</div>
+				<div class="input">
+					<span>date and time</span>
+					<input type="datetime-local">
+				</div>
+			</div>
+
+			<div class="inputBox">
+				<div class="input">
+					<span>your address</span>
+					<textarea name="" placeholder="enter your address" id="" cols="30" rows="10">
+                    </textarea>
+				</div>
+				<div class="input">
+					<span>your messager</span>
+					<textarea name="" placeholder="enter your message" id="" cols="30" rows="10">
+                    </textarea>
+				</div>
+			</div>
+			<a href="H:\Akanksha\front end\html\images\site_orderPlaced.html" target="_self">
+				<input type="button" value="order now" class="btn3">
+			</a>
+		</form>
+
+
+	</section>
+
+	 order section ends -->
+
+
+
+
+	<!-- footer section starts -->
+
+	<section class="footer">
+
+		<div class="box-container">
+
+			<div class="box">
+				<h3>location</h3>
+				<a href="#">india</a>
+				<a href="#">japan</a>
+				<a href="#">russia</a>
+				<a href="#">usa</a>
+				<a href="#">france</a>
+			</div>
+
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#">home</a>
+				<a href="#">dishes</a>
+				<a href="#">about</a>
+				<a href="#">menu</a>
+				<a href="#">review</a>
+				<a href="#">order</a>
+			</div>
+
+			<div class="box">
+				<h3>contact info</h3>
+				<a href="#">+123-456-7890</a>
+				<a href="#">+111-233-435</a>
+				<a href="#">resto@gmail.com</a>
+				<a href="#">food@gmail.com</a>
+				<a href="#">Pune, india - 411052</a>
+			</div>
+
+			<div class="box">
+				<h3>follow us</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+				<a href="#">linkedin</a>
+			</div>
+
+			<div class="credit">copyright @ 2024 by <span>Akanksha Rane</span></div>
+
+
+		</div>
+
+	</section>
+
+	<!-- footer section ends -->
+
+
+	<!-- loader part
+ 	<div class="loader-container">
+		<img src="images/gif1.gif" alt="">
+	</div>
+	
+	 loader part ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- swiper link -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+	<!-- custome js file -->
+	<script src="site.js"></script>
+</body>
+
+</html>
